@@ -1,0 +1,19 @@
+"*":
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    defaultFontSize: 16
+    fontSize: 15
+    scrollPastEnd: true
+    showIndentGuide: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "620a6954-407e-4a23-85ef-2750825eeba7"
+  "linter-ui-default": {}
+  minimap: {}
+  welcome:
+    showOnStartup: false
