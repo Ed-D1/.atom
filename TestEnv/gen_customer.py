@@ -14,10 +14,10 @@ first.close()
 lastNP = np.array(lastNames)
 firstNP = np.array(firstNames)
 
-list = []
+Customer_list = []
 
 for i in range(1000):
     randL = random.randRange(0, len(lastNP))
     randF = random.randRange(0, len(firstNP))
 
-    list.append(Plane.Customer.create_customer(firstNP[randF], lastNP[randL]))
+    Customer_list.append(Plane.Customer.create_customer(firstNP[randF], lastNP[randL]))
