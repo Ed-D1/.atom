@@ -3,7 +3,7 @@
 class Customer:
 
     def __init__(self, firstname="blank", lastname="blank"):
-        self.name = firstname + " " lastname
+        self.name = firstname + " " + lastname
         self.firstname = firstname
         self.lastname = lastname
         number = '{:04d}'.format(random.randint(0, 9999))
