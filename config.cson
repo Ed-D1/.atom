@@ -7,7 +7,7 @@
     ]
   editor:
     defaultFontSize: 16
-    fontSize: 15
+    fontSize: 16
     scrollPastEnd: true
     showIndentGuide: true
     tabLength: 4

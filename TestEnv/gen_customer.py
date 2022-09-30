@@ -3,11 +3,11 @@ import numpy as np
 import random
 # get a list of names to generate customers
 
-last = open("lastname.txt", "r")
+last = open("TestEnv/lastname.txt", "r")
 lastNames = last.readlines()
 last.close()
 
-first = open("firstname.txt", "r")
+first = open("TestEnv/firstname.txt", "r")
 firstNames = first.readlines()
 first.close()
 # setup an array for now may change later for optimization
@@ -17,7 +17,10 @@ firstNP = np.array(firstNames)
 Customer_list = []
 
 for i in range(1000):
-    randL = random.randRange(0, len(lastNP))
-    randF = random.randRange(0, len(firstNP))
+    randL = random.randrange(0, len(lastNP))
+    randF = random.randrange(0, len(firstNP))
 
     Customer_list.append(Plane.Customer.create_customer(firstNP[randF], lastNP[randL]))
+
+for person in Customer_list:
+    print(person.name)
