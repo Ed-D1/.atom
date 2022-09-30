@@ -6,7 +6,8 @@ class Customer:
         self.name = firstname + " " lastname
         self.firstname = firstname
         self.lastname = lastname
-        self.custID = "blank"
+        number = '{:04d}'.format(random.randint(0, 9999))
+        self.custID = self.firstName[0:3] + self.lastName[0:3] + number
 
     # creating a customer
     def create_customer(self):
