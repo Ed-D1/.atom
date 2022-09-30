@@ -1,19 +1,22 @@
-
+import random
 # define what an airline will have
 class Customer:
 
     def __init__(self, firstname="blank", lastname="blank"):
         self.name = firstname + " " + lastname
+        self.name = " ".join(self.name.strip().split())
         self.firstname = firstname
         self.lastname = lastname
         number = '{:04d}'.format(random.randint(0, 9999))
-        self.custID = self.firstName[0:3] + self.lastName[0:3] + number
+        self.custID = self.firstname[0:3] + self.lastname[0:3] + number
 
     # creating a customer
     def create_customer(self):
-        import random
         number = '{:04d}'.format(random.randint(0, 9999))
         self.custID = self.firstName[0:3] + self.lastName[0:3] + number
+
+    def printName(self):
+        print(self.name)
 
 
 # define what a seat contains, which is a seat number, a reservation for that

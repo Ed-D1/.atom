@@ -14,7 +14,7 @@ first.close()
 lastNP = np.array(lastNames)
 firstNP = np.array(firstNames)
 
-Customer_list = [Plane.Customer]
+Customer_list = []
 
 for i in range(1000):
     randL = random.randrange(0, len(lastNP))
@@ -23,4 +23,4 @@ for i in range(1000):
     Customer_list.append(Plane.Customer(firstNP[randF], lastNP[randL]))
 
 for person in Customer_list:
-    print(person.name)
+    person.printName()
