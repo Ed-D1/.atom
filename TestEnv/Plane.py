@@ -83,7 +83,7 @@ class Flight:
                 blank = Customer()
                 self.seats[x].updateSeat(blank, 'xxxxxxxx')
                 found = 'TRUE'
-                print("Reservation has been made on flight: " + self.AFname)
+                print("Reservation has been canceled on flight: " + self.AFname)
                 break
         # if reservation could not be found print a statement
         if found == 'FALSE':
@@ -103,7 +103,7 @@ class Flight:
         if found == 'FALSE':
             print(reservation + " could not be found on flight: " + self.AFname)
 
-    # search for reservation but print once
+    # search for reservation and print once
     def searchResone(self, reservation):
         for x in len(self.seats):
             if self.seats[x] == reservation:

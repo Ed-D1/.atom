@@ -21,6 +21,3 @@ for i in range(1000):
     randF = random.randrange(0, len(firstNP))
 
     Customer_list.append(Plane.Customer(firstNP[randF], lastNP[randL]))
-
-for person in Customer_list:
-    person.printName()
