@@ -1,10 +1,10 @@
 INFO: Platform: win32
 INFO: Version Info: v0.3.0
 DEBUG: Log Path: C:\Users\Eddie\.atom\packages\atom-python-run\cp.log
-DEBUG: command: ['python', 'C:\\Users\\Eddie\\.atom\\TestEnv\\minions.py']
+DEBUG: command: ['python', 'C:\\Users\\Eddie\\.atom\\PythonPrac\\APIprac\\script.py']
 DEBUG: file: None
 DEBUG: pause: True
 DEBUG: repl: python
-DEBUG: args: ['C:\\Users\\Eddie\\.atom\\TestEnv\\minions.py']
+DEBUG: args: ['C:\\Users\\Eddie\\.atom\\PythonPrac\\APIprac\\script.py']
 INFO: return code: 0 (0x0)
-INFO: elapsed time: 0.089170
+INFO: elapsed time: 1.073285
